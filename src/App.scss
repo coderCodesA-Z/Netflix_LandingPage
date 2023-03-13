@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Economica&family=Grape+Nuts&family=Roboto:wght@100;300;400;700;900&display=swap");
+$bg: rgb(16, 16, 16);
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+	color: white;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*
+    Header Styling
+*/
+
+.header {
+	height: 100px;
+	background-color: $bg;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem;
+	box-sizing: border-box;
+
+	> img {
+		height: 100%;
+	}
+
+	> ul {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		// border: 2px solid red;
+		margin-left: 4vmax;
+
+		> li {
+			padding: 10px;
+
+			> a {
+				margin: 1vmax;
+				font-size: 1.15rem;
+				font-weight: 300;
+				&:hover {
+					color: rgb(196, 180, 180);
+					transition: 0.3s;
+				}
+			}
+		}
+	}
+
+	> svg {
+		font-size: 1.5rem;
+		cursor: pointer;
+
+		&:hover {
+			fill: rgb(196, 180, 180);
+			transition: 0.3s;
+		}
+	}
+}
